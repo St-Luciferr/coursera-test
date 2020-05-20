@@ -7,15 +7,15 @@ body{
 }
 a{
     text-decoration: none;
-    color: mediumturquoise;
+    color: rgb(72, 209, 204);
     font-size: 2em;
 }
 a:hover{
-    color: mediumspringgreen;
+    color: rgb(0, 250, 154);
 }
 a:active{
-    color: mediumvioletred;
+    color: rgb(199, 21, 133);
 }
 a:visited{
-    color: midnightblue;
+    color: rgb(25, 25, 112);
 }
