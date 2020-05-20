@@ -1,0 +1,215 @@
+/*setting font-family for body and margin 0 */
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*setting property for main */
+main{
+    display: flex;
+    height: 700px;
+    width: auto;
+}
+/*setting style for left division*/
+.leftdiv{
+    background-image: url("twitter.png");
+    background-color: rgb(92, 200, 236);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat:no-repeat;
+    list-style-type: none;
+    padding-top: 225px;
+    width: 50%;
+    color:white;
+    font-size: 19px;
+    font-weight: bold;
+}
+/*setting ladding for line in left part*/
+li{
+    padding: 3%;
+}
+/* setting margin for form of username and password*/
+form{
+    margin: 10px 0px 100px 0px;
+    
+}
+/*setting styles for footer*/  
+footer{
+    margin-top: 8px;
+    margin-left: 150px;
+    vertical-align: middle;
+}
+/* setting styles for text in footer*/
+footer a,span{
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+    color: gray;
+}
+/*setting property to underline when link in footer is hovered */
+footer a:hover{
+    text-decoration: underline;
+}
+/*setting style for forgot passwork link*/
+#forgot{
+    color:rgb(32, 187, 238);
+    text-decoration: none;
+    font-size: 13px;
+}
+/*setting underline text when forgot password link is hovered */
+#forgot:hover{
+    text-decoration: underline;
+}
+/*styles for login button*/
+.login{
+    border: 1px solid rgb(32, 187, 238); 
+    border-radius: 15px;
+    vertical-align: middle;
+    text-align: center;
+}
+/* style for link in login button*/
+.login a{
+    text-decoration: none;
+    color:rgb(32, 187, 238); 
+}
+/*styles for signup button*/
+.signup{
+    background-color: rgb(32, 187, 238);
+    border-radius: 15px;
+    vertical-align: middle;
+    text-align: center;
+}
+/* style for link in signup button*/
+.signup a{ 
+    color: white;
+    text-decoration: none;   
+}
+/*changing bgcolor when signup button is hovered*/
+.signup:hover{
+    background-color:rgb(21, 166, 214) ;
+}
+/*changing bgcolor when login button is hovered*/
+.login:hover{
+    background-color: rgb(226, 239, 243);
+}
+/*style properties for input in form*/
+input[type=text],input[type=password]{
+    width: 200px;   
+    border: none;  
+    outline: none;
+    font-size: 20px;
+    color: black;
+    background-color:rgb(226, 239, 243) ;  
+}
+/*setting property for upper login button*/
+.uppertable tr td.login{
+    width: 60px;
+    font-weight: bold;
+    font-size: 14px;
+}
+/*text-alignment for table*/
+table{
+    text-align: left;
+}
+/*style property for left table*/
+.lefttable{
+    width: 100%;
+    margin-left: 15%;
+}
+/*style for left table row*/
+.lefttable tr{
+    height: 50px;
+}
+/*style for lower table in right part*/
+.lowertable{
+    margin-left:30% ;
+}
+.lowertable tr td {
+    width:400px;
+    margin-left:50px;
+}
+/*style for upper table in right*/
+.uppertable{
+    font-size: 15px;
+    color: grey;
+    border: none;
+    margin-left: 18%;
+}
+.uppertable tr{
+    margin: 0px;    
+}
+.uppertable td.grey{
+    background-color: rgb(226, 239, 243);
+    border: 2px solid rgb(226, 239, 243) ;
+    border-bottom: 2px solid grey;
+    padding: 6px;
+}
+.uppertable td.grey:focus-within{
+    color:rgb(32, 187, 238);
+
+}
+.uppertable .grey{
+    border-top: 2px solid rgb(231, 231, 236);
+}
+/*setting style for paragraph*/
+p{
+    font-size: 30px;
+    font-weight: bolder;
+}
+/*login button style in upper table*/
+span.login{
+    height: 25px;
+    width: 60px;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: bold;
+}
+/*media responsive styles for screen smaller than 800px width*/
+@media screen and (max-width:800px){
+    main{
+        flex-flow: column-reverse;
+        width: auto;
+        max-height: fit-content;
+    }
+    .leftdiv{
+        width: 100%;
+        padding-top: 20%;
+    }
+    .uppertable{
+        display: none;
+        width: auto;
+    }
+    .lowertable{
+        margin-left: 20%;
+        width: auto;
+    }
+    footer{
+        margin: 2%;
+    }
+    form,span.login{
+        display: none;
+    }
+}
+/*style for screen smaller than 640px height*/
+@media screen and (max-height:640px){
+    .uppertable{
+        display: none;
+    }
+    .lowertable{
+        width: auto;
+        table-layout: auto;
+        margin-top: 15%;
+    }
+    
+    .leftdiv{
+        padding-top: 10%;
+        height: auto;
+        vertical-align: middle;
+    }
+    .reghtdiv{
+        height: unset;
+    }
+    form,span.login{
+        display: none;
+    }
+}
