@@ -1,0 +1,21 @@
+body{
+    background-color: thistle;
+    background-image: url("lucifer.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: mediumturquoise;
+    font-size: 2em;
+}
+a:hover{
+    color: mediumspringgreen;
+}
+a:active{
+    color: mediumvioletred;
+}
+a:visited{
+    color: midnightblue;
+}
